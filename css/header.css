@@ -1,12 +1,4 @@
 /**
- * Images a now responsive
- */
- img {
-	max-width: 100%;
-	height: auto;
-}
-
-/**
  * Limit the container in
  * width for big screens
  */
@@ -15,6 +7,10 @@
 	max-width: 100%;
 	padding: 10px;
 	margin: 0 auto;
+}
+
+.main-header {
+	border-bottom: 1px solid #f0f4f7;
 }
 
 .main-header .container {
@@ -47,13 +43,17 @@
     -webkit-box-flex: 1;
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
-    text-align: center;
+	text-align: center;
 }
 .main-nav a {
 	display: inline-block;
 	padding: .5em 1.5em;
 }
 
+.main-nav a:hover {
+	text-decoration: none;
+	font-weight: 700;
+}
 /**
  * Space-around become
  * Space-between to

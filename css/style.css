@@ -5,6 +5,10 @@
 body {
     margin: 0px;
     padding: 0px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
 }
 
 header, footer {
@@ -20,6 +24,27 @@ header, footer {
     align-items: center;
 }
 
+.banner h1, .banner h3, .banner h6 {
+    margin: 0;
+    text-shadow: 2px 2px 6px #000;
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 60px;
+}
+
+.banner h3 {
+    font-size: 32px;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.banner h6 {
+    font-size: 22px;
+}
+
 a {
     color: #007bff;
     text-decoration: none;
@@ -28,7 +53,6 @@ a {
 }
 
 #main {
-    min-height: 800px;
     margin: 0px;
     padding: 0px;
     display: -webkit-flex;
@@ -40,20 +64,19 @@ a {
 #main>article {
     margin: 4px;
     padding: 5px;
+    /*
     border: 1px solid #cccc33;
     background: #dddd88;
+    */
     -webkit-flex: 3 1 60%;
     flex: 3 1 60%;
     -webkit-order: 2;
     order: 2;
 }
 
-
 #main>aside {
     margin: 4px;
     padding: 5px;
-    border: 1px solid #8888bb;
-    background: #ccccff;
     -webkit-flex: 1 6 20%;
     flex: 1 6 20%;
     -webkit-order: 3;
@@ -84,3 +107,31 @@ a {
 .pa-0 {
     padding: 0px !important;
 }
+
+/**
+ * Images a now responsive
+ */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.make-me-sticky {
+    position: relative;
+    /* I am the fallback */
+    /* Give it everything you got! (use an auto prefixer...) */
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    position: sticky;
+    top: 0;
+    /* Required  */
+}
+
+p { margin: 0px 0px 10px; }
+.text-justify { text-align: justify; }
+.text-primary { color: #007bff; }
+.text-bold { font-weight: 700; }
+.text-muted { color: #777; }

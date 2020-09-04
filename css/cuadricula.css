@@ -1,0 +1,55 @@
+.portada {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.cuadricula {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cuadricula .item {
+    font-weight: 600;
+    width: calc((100% - 10px) / 2);
+    flex: none;
+    margin-bottom: 10px;
+    transition: transform .2s; /* Animation */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cuadricula .item:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+@media screen and (min-width: 400px) {
+    .cuadricula .item {
+        width: calc((100% - 20px) / 3);
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .cuadricula {
+        width: 85%;
+    }
+    .cuadricula .item {
+        width: calc((100% - 30px) / 4);
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .cuadricula {
+        width: 75%;
+    }
+    .cuadricula .item {
+        width: calc((100% - 40px) / 5);
+    }
+}
