@@ -1,0 +1,112 @@
+.form-survey{
+    display: block;
+    border-radius: 15px;
+    color: #777;
+    padding: 0px 0px 20px 365px;
+}
+
+.div-form{
+    border: 1px solid #d3d3d3;
+    border-radius: 15px;
+    padding: 25px;
+    margin-top: 20px;
+    font-size: 15px;
+    width: 600px;
+}
+
+.div-title{
+    padding: 10px 0px 10px 365px;
+}
+
+.div-title h2{
+    color: #007bff;
+}
+
+.div-title h4{
+    color: #777;
+}
+
+.div-button{
+    margin-top: 2px;
+    width: 600px;
+}
+
+.questions{
+    font-weight: bold;
+}
+
+.form-survey input[type="text"], .form-survey select{
+    border: 1px solid;
+    border-radius: 10px;
+    width: 70%;
+    height: 25px;
+    font-size: 15px;
+}
+
+.form-survey input[type="submit"]{
+    background-color: #007bff;
+    font-size: 15px;
+    margin: 15px auto; 
+    border: 1px solid ; 
+    padding: 15px 30px;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.form-survey input[type="submit"]:hover{
+    background-color: lightblue;
+}
+
+/*-----*/
+.form-survey input[type="radio"],
+.form-survey input[type="checkbox"]{
+    display: none;
+}
+
+.label-radio, .label-checkbx{
+    display: inline-block;
+    cursor: pointer;
+    color: black; 
+    position: relative;
+    padding: 5px 15px 5px 51px;
+    /*margin-top: 5px;
+    margin-bottom: 5px;*/
+    font-size: 1em;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.label-radio:hover, .label-checkbx:hover{
+    background: lightblue;
+}
+
+.label-radio:before, .label-checkbx:before{
+    content: "";
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    background: none;
+    border: 2px solid #007bff;
+    border-radius: 50%;
+    position: absolute;
+    left: 15px;
+}
+
+.label-checkbx:before{
+    border-radius: 3px;
+}
+
+.form-survey input[type="radio"]:checked + .label-radio,
+.form-survey input[type="checkbox"]:checked + .label-checkbx{
+    padding: 5px 15px;
+    background: lightblue;
+    border-radius: 2px;
+    color: white;
+}
+.form-survey input[type="radio"]:checked + .label-radio:before,
+.form-survey input[type="checkbox"]:checked + .label-checkbx:before{
+    display: none;
+}

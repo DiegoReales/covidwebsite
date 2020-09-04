@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/survey.css">
 </head>
 
 <body>
@@ -30,8 +31,65 @@
         </div>
     </header>
     <div id='main'>
-        <article>article</article>
-        <aside>aside</aside>
+        <article>
+            <section class="section-survey">
+                <div class="div-title">
+                    <h2>ENCUESTA</h2>
+                    <h4>Ayudanos a conocer el estado de tu salud</h4>
+                </div>
+                <form class="form-survey" action="encuesta.html" method="POST">
+                    <div class="div-form">
+                        <label class="questions">1. Ingrese nombres</label><br>
+                        <input type="text" name="nombres" required><br><br>
+                        <label class="questions">2. Ingrese apellidos</label><br>
+                        <input type="text" name="apellidos" required><br>
+                    </div>
+                    <div class="div-form">
+                        <label class="questions">3. Registre su temperatura corporal</label><br>
+                        <select name="temperatura" required>
+                            <option>Menos de 37°C</option>
+                            <option>Entre 37 y 38°C</option>
+                            <option>Entre 38 y 39°C</option>
+                            <option>Más de 39°C</option>
+                        </select>
+                    </div>
+                    <div class="div-form">
+                        <label class="questions">4. ¿Vive con personas de alto riego (tercera edad - menores de 2 años)?</label><br>
+                        <input type="radio" name="temperatura" id="Si" required> 
+                        <label for="Si" class="label-radio"> Si</label><br>
+                        <input type="radio" name="temperatura" id="No">
+                        <label for="No" class="label-radio"> No</label><br>
+                    </div>
+                    <div class="div-form">
+                        <label class="questions">5. ¿Presenta algunos de estos sintomas?</label><br>
+                        <input type="checkbox" name="sintomas" value="0" id="0" required> 
+                        <label for="0" class="label-checkbx">Tos</label><br>
+                        <input type="checkbox" name="sintomas" value="1" id="1"> 
+                        <label for="1" class="label-checkbx">Dolor de cabeza</label><br>
+                        <input type="checkbox" name="sintomas" value="2" id="2">
+                        <label for="2" class="label-checkbx">Dolor de garganta</label><br>
+                        <input type="checkbox" name="sintomas" value="3" id="3">
+                        <label for="3" class="label-checkbx">Problemas al respirar</label><br>
+                        <input type="checkbox" name="sintomas" value="4" id="4">
+                        <label for="4" class="label-checkbx">Ninguno</label><br>
+                    </div>
+                    <div class="div-form">
+                        <label class="questions">6. ¿Ha tenido contacto con viajeros del exterior o nacionales?</label><br>
+                        <input type="radio" name="contacto" id="si" required>
+                        <label for="si" class="label-radio"> Si</label><br>
+                        <input type="radio" name="contacto" id="no">
+                        <label for="no" class="label-radio"> No</label><br>
+                    </div>
+                    <div class="div-form">
+                        <label class="questions">7. Comentarios sobre esta situación</label><br>
+                        <textarea name="textarea" rows="4" cols="70"></textarea>
+                    </div>
+                    <div class="div-button">
+                        <input type="submit" name="enviar" value="ENVIAR">
+                    </div>
+                </form>
+            </section>
+        </article>
     </div>
     <footer>
         <!-- Footer main -->
