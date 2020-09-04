@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/results.css">
 </head>
 
 <body>
@@ -30,8 +31,105 @@
         </div>
     </header>
     <div id='main'>
-        <article>article</article>
-        <aside>aside</aside>
+        <article>
+            <section>
+                <div class="title-results">
+                    <h2>Resultados encuesta sobre la salud</h2><br>
+                    <p>Los resultados obtenidos son:</p>
+                </div>
+                <div class="contenedor">
+                    <div class="div-results">
+                        <ul>
+                            <li>Registre su temperatura corporal</li>
+                            <table class="table-results">
+                                <tr>
+                                    <td>Menos de 37°C</td>
+                                    <td><progress class="progress1" value="60" max="100"></progress></td>
+                                </tr>
+                                <tr>
+                                    <td>Entre 37 y 38°C</td>
+                                    <td><progress class="progress2" value="25" max="100"></progress></td>
+                                </tr>
+                                <tr>
+                                    <td>Entre 38 y 39°C</td>
+                                    <td><progress class="progress3" value="10" max="100"></progress></td>
+                                </tr>
+                                <tr>
+                                    <td>Más de 39°C</td>
+                                    <td><progress class="progress4" value="5" max="100"></progress></td>
+                                </tr>
+                            </table>
+                        </ul>
+                    </div><br>
+                    <div class="div-results">
+                        <ul>
+                            <li>¿Vive con personas de alto riego (tercera edad - menores de 2 años)?</li>
+                            <table class="table-results">
+                                <tr>
+                                    <td>Si</td>
+                                    <td><progress class="progress1" value="70" max="100"></progress></td>
+                                </tr>
+                                <tr>
+                                    <td>No</td>
+                                    <td><progress class="progress2" value="18" max="100"></progress></td>
+                                </tr>
+                                <tr>
+                                    <td>Otros</td>
+                                    <td><progress class="progress3" value="12" max="100"></progress></td>
+                                </tr>
+                            </table>
+                        </ul>
+                    </div><br>
+                    <div class="div-results">
+                        <ul>
+                            <li>¿Presenta algunos de estos sintomas?</li>
+                            <table class="table-results">
+                                <tr>
+                                    <td>Tos</td>
+                                    <td><progress class="progress1" value="35" max="100"></progress></td>
+                                </tr>
+                                <tr>
+                                    <td>Dolor de cabeza</td>
+                                    <td><progress class="progress2" value="25" max="100"></progress></td>
+                                </tr>
+                                <tr>
+                                    <td>Dolor de garganta</td>
+                                    <td><progress class="progress3" value="10" max="100"></progress></td>
+                                </tr>
+                                <tr>
+                                    <td>Problemas al respirar</td>
+                                    <td><progress class="progress4" value="10" max="100"></progress></td>
+                                </tr>
+                                <tr>
+                                    <td>Ninguno</td>
+                                    <td><progress class="progress5" value="20" max="100"></progress></td>
+                                </tr>
+                            </table>
+                        </ul>
+                    </div><br>
+                    <div class="div-results">
+                        <ul>
+                            <li>¿Ha tenido contacto con viajeros del exterior o nacionales?</li>
+                            <table class="table-results">
+                                <tr>
+                                    <td>No</td>
+                                    <td><progress class="progress1" value="70" max="100"></progress></td>
+                                </tr>
+                                <tr>
+                                    <td>Si</td>
+                                    <td><progress class="progress2" value="30" max="100"></progress></td>
+                                </tr>
+                            </table>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <aside>
+            <div class="div-aside">
+                <img src="./img/aside2.jpg">
+            </div>
+        </aside>
     </div>
     <footer>
         <!-- Footer main -->
@@ -65,7 +163,7 @@
             <div class="ft-main-item">
                 <h2 class="ft-title">Mantente actualizado</h2>
                 <p>Recibe nuestras últimas noticias.</p>
-                <form>
+                <forms>
                     <input type="email" name="email" placeholder="Ingresar email">
                     <input type="submit" value="Subscribirse">
                 </form>
