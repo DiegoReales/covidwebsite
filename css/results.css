@@ -67,6 +67,11 @@ ul{
 	background: #80b3a2;
 }
 
+
+.div-results progress::-moz-progress-bar{
+	border-radius: 10px;
+}
+
 .table-results{
 	width: 460px;
 	padding: 3px;

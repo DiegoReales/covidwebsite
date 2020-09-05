@@ -134,3 +134,7 @@ input[type="submit"] {
 .ft-legal-list li:nth-last-child(2) {
     flex: 1;
 }
+
+footer section {
+    border: none;
+}
